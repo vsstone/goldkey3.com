@@ -299,7 +299,7 @@ tbody tr td:first-child {
         position: relative;
         padding: 0.8rem 0.8rem 0.8rem 50%;
         text-align: left;
-        font-size: 14px; /* CHANGED: This is now the smaller, default font size for data */
+        font-size: 14px;
     }
 
     td:before {
@@ -310,12 +310,12 @@ tbody tr td:first-child {
         padding-right: 10px;
         white-space: nowrap;
         font-weight: 700;
-        font-size: 16px; /* CHANGED: A slightly larger font size for the labels */
+        font-size: 15px; /* CHANGED: A slightly larger font size for the labels */
     }
 
     /* NEW RULE: Make the first data cell's font size larger to match the labels */
     tbody tr td:first-child {
-        font-size: 16px; 
+        font-size: 15px; 
     }
 
     /* Add the content for the labels */
