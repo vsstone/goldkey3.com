@@ -297,19 +297,25 @@ tbody tr td:first-child {
         border: none;
         border-bottom: 1px solid #eee;
         position: relative;
-        padding-left: 50%; /* Make space for the labels */
+        padding: 0.8rem 0.8rem 0.8rem 50%;
         text-align: left;
+        font-size: 14px; /* CHANGED: This is now the smaller, default font size for data */
     }
 
     td:before {
-        /* Add the header text back in as a label for each cell */
         position: absolute;
-        top: 1.2rem;
-        left: 1.2rem;
+        top: 0.8rem;
+        left: 0.8rem;
         width: 45%;
         padding-right: 10px;
         white-space: nowrap;
         font-weight: 700;
+        font-size: 16px; /* CHANGED: A slightly larger font size for the labels */
+    }
+
+    /* NEW RULE: Make the first data cell's font size larger to match the labels */
+    tbody tr td:first-child {
+        font-size: 16px; 
     }
 
     /* Add the content for the labels */
